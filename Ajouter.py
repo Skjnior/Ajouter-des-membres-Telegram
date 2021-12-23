@@ -77,13 +77,13 @@ def add_users_to_group():
         except:
             continue
 
-    print('Choose a group to add members:')
+    print('Choisi un groupe pour ajouter les membres:')
     i=0
     for group in groups:
         print(str(i) + '- ' + group.title)
         i+=1
 
-    g_index = input("Enter a Number: ")
+    g_index = input("Entrer le numero du groupe: ")
     target_group=groups[int(g_index)]
     print('\n\nChosen Group:\t' + groups[int(g_index)].title)
 
@@ -142,13 +142,13 @@ def list_users_in_group():
         except:
             continue
     
-    print('Choose a group to scrape members from:')
+    print('Choisi un groupe pour extraire les membres:')
     i=0
     for g in groups:
         print(str(i) + '- ' + g.title)
         i+=1
     
-    g_index = input("Enter a Number: ")
+    g_index = input("Entre un numero: ")
     target_group=groups[int(g_index)]
 
     print('\n\nGrupo elegido:\t' + groups[int(g_index)].title)
@@ -199,7 +199,7 @@ def printCSV():
 # all_participants = client.get_participants(target_group, aggressive=True)
 print('Sucessfully Connected! ')
 print('What do you want to do:')
-mode = int(input("Enter \n1 - List users in a group\n2 - Add users from CSV to Group (CSV must be passed as a parameter to the script)\n3 - Show CSV\n\nYour option:  "))
+mode = int(input("Entrer \n1 - Liste des utulisateurs du groupe\n2 - ajouter les utilsateurs depuis CSV du goupe (CSV doit être passé en paramètre du script)\n3 - Afficher CSV\n\nVotre option:  "))
 
 if mode == 1:
     list_users_in_group()
