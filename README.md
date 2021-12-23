@@ -13,11 +13,11 @@
 ### python3 et pip3 doivent être installés et disponibles dans votre PATH.
 
 ### installer le module telethon en exécutant la commande
-pip3 installer le téléthon
+pip3 install telethon
 
 ### Configuration du télégramme
 
-1. Pour l'exécuter, vous devez générer des informations d'identification API pour votre utilisateur Telegram, vous pouvez le faire [ici] (https://core.telegram.org/api/obtaining_api_id), et accéder à celles déjà créées [ici] (https  ://my.telegram.org/apps)
+1. Pour l'exécuter, vous devez générer des informations d'identification API pour votre utilisateur Telegram, vous pouvez le faire [ici] (https://core.telegram.org/api/obtaining_api_id), et accéder à celles déjà créées [ici] (https://my.telegram.org/apps)
 2. Remplacez vos identifiants dans le script python
 
 
