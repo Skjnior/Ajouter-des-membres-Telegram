@@ -25,9 +25,9 @@ import random
 import re
 
 
-api_id = 'xxxxx'             #Your Api ID
-api_hash = 'xxxxxxxxxxxxxxx' #Your Api Hash
-phone = '+224xxxxxxx'      # Your Phone Number With Country Code.
+api_id = xxxxx   #Your Api ID
+api_hash = 'xxxxxxxxxxxxxxxxxx'    #Your Api Hash
+phone = '+224xxxxxxxxx'      # Your Phone Number With Country Code.
 client = TelegramClient(phone, api_id, api_hash)
 
 client.connect()
@@ -77,13 +77,13 @@ def add_users_to_group():
         except:
             continue
 
-    print('Choisi un groupe pour ajouter les membres:')
+    print('Choose a group to add members:')
     i=0
     for group in groups:
         print(str(i) + '- ' + group.title)
         i+=1
 
-    g_index = input("Entrer le numero du groupe: ")
+    g_index = input("Enter a Number: ")
     target_group=groups[int(g_index)]
     print('\n\nChosen Group:\t' + groups[int(g_index)].title)
 
@@ -142,13 +142,13 @@ def list_users_in_group():
         except:
             continue
     
-    print('Choisi un groupe pour extraire les membres:')
+    print('Choose a group to scrape members from:')
     i=0
     for g in groups:
         print(str(i) + '- ' + g.title)
         i+=1
     
-    g_index = input("Entre un numero: ")
+    g_index = input("Enter a Number: ")
     target_group=groups[int(g_index)]
 
     print('\n\nGrupo elegido:\t' + groups[int(g_index)].title)
@@ -199,7 +199,7 @@ def printCSV():
 # all_participants = client.get_participants(target_group, aggressive=True)
 print('Sucessfully Connected! ')
 print('What do you want to do:')
-mode = int(input("Entrer \n1 - Liste des utulisateurs du groupe\n2 - ajouter les utilsateurs depuis CSV du goupe (CSV doit être passé en paramètre du script)\n3 - Afficher CSV\n\nVotre option:  "))
+mode = int(input("Enter \n1 - List users in a group\n2 - Add users from CSV to Group (CSV must be passed as a parameter to the script)\n3 - Show CSV\n\nYour option:  "))
 
 if mode == 1:
     list_users_in_group()
